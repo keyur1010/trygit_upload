@@ -3,68 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Social Media</title>
+    <title>Document</title>
     <style>
-        body {
-            background-color: #f0f0f0;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
+       body {
+    background-image: url('bg1.jpg');
+    background-size: cover; /* This will scale the image to cover the entire background */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed;
+    opacity: 1;
+    z-index: 0; /* This keeps the background fixed while scrolling */
+}
+.header {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally (X-axis) */
+    align-items: center; /* Center vertically (Y-axis) */
+    color: white; /* Text color */
+    background: linear-gradient(to right, rgb(0, 195, 255), rgb(255, 0, 230)); /* Initial gradient background */
+    border: solid;
+    height: 50px;
+    width: 150px;
+    opacity: 1;
+    z-index: 1;
+    margin: 0 auto; 
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0; /* Remove padding */
+    border-radius: 20px;
+    background-size: 200% 100%; /* Adjust the size based on the number of colors */
+    animation: gradientChange 4s infinite; /* Apply the animation */
+}
 
-        .header {
-            background: linear-gradient(to right, red, violet, pink);
-            padding: 15px;
-            border-radius: 30px;
-            display: inline-block;
-            margin-top: 30px;
-            font-size: 24px;
-            color: white;
-        }
+@keyframes gradientChange {
+    0% {
+        background-position: 0 0; /* Start position (left) */
+    }
+    25% {
+        background-position: 100% 0; /* Transition to the middle position (right) */
+    }
+    50% {
+        background-position: 200% 0; /* Transition to the middle position (left) */
+    }
+    100% {
+        background-position: 300% 0; /* End position (right) */
+    }
+}
 
-        .photo {
-            margin-top: 30px;
-        }
 
-        .tabs {
-            margin-top: 30px;
-        }
 
-        .tab {
-            display: inline-block;
-            margin: 0 20px;
-        }
 
-        .tab img {
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-        }
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Scale the image to fit within the background */
+        background-position: center; /* Center the image */
+    }
+}
+
+
+
     </style>
 </head>
 <body>
-    <div class="header">
-        My Social Media
-    </div>
-
-    <div class="photo">
-        <img src="your_photo.jpg" alt="Your Passport-sized Photo">
-    </div>
-
-    <div class="tabs">
-        <div class="tab">
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="instagram_icon.png" alt="Instagram">
-            </a>
-        </div>
-        <div class="tab">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="facebook_icon.png" alt="Facebook">
-            </a>
-        </div>
-        <div class="tab">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <img src="whatsapp_icon.png" alt="WhatsApp">
-            </a>
+    <div class="container">
+        <div class="nav">
+            <div class="header">
+                Easy To connect
+            </div>
         </div>
     </div>
 </body>
