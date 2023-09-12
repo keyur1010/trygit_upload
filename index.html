@@ -1,111 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-       body {
-    background-image: url('bg1.jpg');
-    background-size: cover; /* This will scale the image to cover the entire background */
-    background-repeat: no-repeat; /* This prevents the image from repeating */
-    background-attachment: fixed;
-    opacity: 1;
-    z-index: 0; /* This keeps the background fixed while scrolling */
-}
-.header {
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally (X-axis) */
-    align-items: center; /* Center vertically (Y-axis) */
-    color: white; /* Text color */
-    background: linear-gradient(to right, rgb(0, 195, 255), rgb(255, 0, 230)); /* Initial gradient background */
-    border: solid;
-    height: 80px;
-    width: 200px;
-    opacity: 1;
-    z-index: 1;
-    margin: 0 auto; 
-    font-size: 20px;
-    font-weight: 900;
-    padding: 0; /* Remove padding */
-    border-radius: 20px;
-    background-size: 200% 100%; /* Adjust the size based on the number of colors */
-    animation: gradientChange 4s infinite; /* Apply the animation */
-}
-.main {
-    display: flex; /* Use flexbox to arrange tabs in a row */
-    justify-content: center; /* Center tabs horizontally */
-}
+      body {
+        background-image: url("bg1.jpg");
+        background-size: cover; /* This will scale the image to cover the entire background */
+        background-repeat: no-repeat; /* This prevents the image from repeating */
+        background-attachment: fixed;
+        opacity: 1;
+        z-index: 0; /* This keeps the background fixed while scrolling */
+      }
+      .header {
+        display: flex; /* Enable flexbox layout */
+        justify-content: center; /* Center horizontally (X-axis) */
+        align-items: center; /* Center vertically (Y-axis) */
+        color: white; /* Text color */
+        background: linear-gradient(
+          to right,
+          rgb(0, 195, 255),
+          rgb(255, 0, 230)
+        ); /* Initial gradient background */
+        border: solid;
+        height: 80px;
+        width: 200px;
+        opacity: 1;
+        z-index: 1;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 0; /* Remove padding */
+        border-radius: 20px;
+        background-size: 200% 100%; /* Adjust the size based on the number of colors */
+        animation: gradientChange 4s infinite; /* Apply the animation */
+      }
+      .main {
+        display: flex; /* Use flexbox to arrange tabs in a row */
+        justify-content: center;
+        margin-top: 80px; /* Center tabs horizontally */
+      }
 
-.tab {
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally (X-axis) */
-    align-items: center;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background: linear-gradient(to right, rgba(102, 0, 255, 0.715), rgb(235, 78, 219));
-    border: solid;
-    height: 50px;
-    width: 550px;
-    opacity: 1;
-    margin: 10px; /* Add some margin between tabs */
-    font-size: 16px;
-    font-weight: 900;
-    padding: 0;
-    border-radius: 20px;
-    background-size: 200% 100%;
-    animation: gradientChange 6s infinite;
-    text-decoration: none;
-}
+      .tab {
+        display: flex; /* Enable flexbox layout */
+        justify-content: center; /* Center horizontally (X-axis) */
+        align-items: center;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(
+          to right,
+          rgba(102, 0, 255, 0.715),
+          rgb(235, 78, 219)
+        );
+        border: solid;
+        height: 100px;
+        width: 300px;
+        opacity: 1;
+        margin: 10px; /* Add some margin between tabs */
+        font-size: 16px;
+        font-weight: 900;
+        padding: 0;
+        border-radius: 20px;
+        background-size: 200% 100%;
+        animation: gradientChange 6s infinite;
+        text-decoration: none;
+      }
 
-@keyframes gradientChange {
-    0% {
-        background-position: 0 0; /* Start position (left) */
-    }
-    25% {
-        background-position: 100% 0; /* Transition to the middle position (right) */
-    }
-    50% {
-        background-position: 200% 0; /* Transition to the middle position (left) */
-    }
-    100% {
-        background-position: 300% 0; /* End position (right) */
-    }
-}
+      @keyframes gradientChange {
+        0% {
+          background-position: 0 0; /* Start position (left) */
+        }
+        25% {
+          background-position: 100% 0; /* Transition to the middle position (right) */
+        }
+        50% {
+          background-position: 200% 0; /* Transition to the middle position (left) */
+        }
+        100% {
+          background-position: 300% 0; /* End position (right) */
+        }
+      }
 
-
-
-
-@media screen and (max-width: 768px) {
-    body {
-        background-size: cover; /* Scale the image to fit within the background */
-        background-position: center; /* Center the image */
-    }
-}
-
-
-
+      @media screen and (max-width: 768px) {
+        body {
+          background-size: cover; /* Scale the image to fit within the background */
+          background-position: center; /* Center the image */
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="nav">
-            <div class="header">
-                AADIL MANSURI
-            </div>
-        </div>
-        <div class="main">
-            <a  href="https://www.instagram.com/aadil_3041" id="tab" class="tab" >
-                INSTAGRAM
+      <div class="nav">
+        <div class="header">AADIL MANSURI</div>
+      </div>
+      <div class="main">
+        <a href="https://www.instagram.com/aadil_3041" id="tab" class="tab">
+          INSTAGRAM
         </a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B919265179484&text&type=phone_number&app_absent=0" id="tab" class="tab">
-                WHATSAPP
-            </a>
-            <a href="https://www.facebook.com/mansuri.aadil.96" id="tab" class="tab">
-                FACEBOOK
-            </a>
-
-        </div>
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B919265179484&text&type=phone_number&app_absent=0"
+          id="tab"
+          class="tab"
+        >
+          WHATSAPP
+        </a>
+        <a
+          href="https://www.facebook.com/mansuri.aadil.96"
+          id="tab"
+          class="tab"
+        >
+          FACEBOOK
+        </a>
+      </div>
+      <div class="main">
+        <a href="mailto:aadilv111@gmail.com?subject=Hello%20Friend&body=Hi%20Aadil,%20"" id="tab" class="tab">
+            EMAIL
+        </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
