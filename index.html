@@ -32,6 +32,31 @@
     background-size: 200% 100%; /* Adjust the size based on the number of colors */
     animation: gradientChange 4s infinite; /* Apply the animation */
 }
+.main {
+    display: flex; /* Use flexbox to arrange tabs in a row */
+    justify-content: center; /* Center tabs horizontally */
+}
+
+.tab {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally (X-axis) */
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(102, 0, 255, 0.715), rgb(235, 78, 219));
+    border: solid;
+    height: 50px;
+    width: 550px;
+    opacity: 1;
+    margin: 10px; /* Add some margin between tabs */
+    font-size: 16px;
+    font-weight: 900;
+    padding: 0;
+    border-radius: 20px;
+    background-size: 200% 100%;
+    animation: gradientChange 6s infinite;
+    text-decoration: none;
+}
 
 @keyframes gradientChange {
     0% {
@@ -66,8 +91,20 @@
     <div class="container">
         <div class="nav">
             <div class="header">
-                Easy To connect
+                AADIL MANSURI
             </div>
+        </div>
+        <div class="main">
+            <a  href="https://www.instagram.com/aadil_3041" id="tab" class="tab" >
+                INSTAGRAM
+        </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B919904472504&text&type=phone_number&app_absent=0" id="tab" class="tab">
+                WHATSAPP
+            </a>
+            <a href="https://www.facebook.com/mansuri.aadil.96" id="tab" class="tab">
+                FACEBOOK
+            </a>
+
         </div>
     </div>
 </body>
